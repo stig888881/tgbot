@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 
-bot = telebot.TeleBot("РЫБА", parse_mode=None) # You can set parse_mode by default. HTML or MARKDOWN
+bot = telebot.TeleBot("РЫБА", parse_mode=None)
 
 import os
 checkimg = os.path.isfile('file.jpg')
