@@ -44,10 +44,8 @@ def send_img(message):
 			doc = app.open("C:/Users/Димас/PycharmProjects/tgbot/venv/file.jpg")
 			app.doAction("POSTERIZE EFFECT by PhotoshopSupply.com", "POSTERIZE by PhotoshopSupply.com")
 			options = ps.JPEGSaveOptions(quality=5)
-			# # save to jpg
 			jpg = 'C:/Users/Димас/PycharmProjects/tgbot/venv/tst.jpg'
 			doc.saveAs(jpg, options, asCopy=True)
-			# app.doJavaScript(f'alert("save to jpg: {jpg}")')
 			photo = open('tst.jpg', 'rb')
 			bot.send_photo(message.chat.id, photo)
 			os.remove('file.jpg')
@@ -64,10 +62,8 @@ def send_img(message):
 			doc = app.open("C:/Users/Димас/PycharmProjects/tgbot/venv/file.jpg")
 			app.doAction("Action 51", "Oil-paint")
 			options = ps.JPEGSaveOptions(quality=5)
-			# # save to jpg
 			jpg = 'C:/Users/Димас/PycharmProjects/tgbot/venv/tst.jpg'
 			doc.saveAs(jpg, options, asCopy=True)
-			# app.doJavaScript(f'alert("save to jpg: {jpg}")')
 			photo = open('tst.jpg', 'rb')
 			bot.send_photo(message.chat.id, photo)
 			os.remove('file.jpg')
